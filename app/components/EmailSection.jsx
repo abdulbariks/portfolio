@@ -36,6 +36,8 @@ const EmailSection = () => {
     if (response.status === 200) {
       console.log("Message sent.");
       setEmailSubmitted(true);
+      const interval = setInterval(setEmailSubmitted, 2000);
+      return () => clearInterval(interval);
     }
   };
 
@@ -84,7 +86,7 @@ const EmailSection = () => {
                 id="email"
                 required
                 className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-                placeholder="aboul@gmail.com"
+                placeholder="abdul@gmail.com"
               />
             </div>
             <div className="mb-6">
