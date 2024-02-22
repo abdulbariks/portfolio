@@ -52,12 +52,12 @@ const projectsData = [
   },
   {
     id: 6,
-    title: "Full-stack Roadmap",
+    title: "Chat Application",
     description: "Project 5 description",
-    image: "/images/projects/6.png",
+    image: "/images/projects/chat-application.PNG",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/abdulbariks/chat-application",
+    previewUrl: "https://chat-application-3hxv.onrender.com",
   },
 ];
 
