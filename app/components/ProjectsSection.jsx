@@ -18,7 +18,7 @@ const projectsData = [
     id: 2,
     title: "Next.Js Portfolio Website",
     description: "Next.js - a React framework used for building blazing-fast websites along with server-side rendering",
-    image: "/images/projects/React.js portfolio.PNG",
+    image: "/images/projects/react-portfolio.PNG",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/abdulbariks/portfolio",
     previewUrl: "https://abdul-barik-portfolio.vercel.app/",
