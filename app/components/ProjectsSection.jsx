@@ -16,12 +16,12 @@ const projectsData = [
   },
   {
     id: 2,
-    title: "Potography Portfolio Website",
-    description: "Project 2 description",
-    image: "/images/projects/2.png",
+    title: "Next.Js Portfolio Website",
+    description: "Next.js - a React framework used for building blazing-fast websites along with server-side rendering",
+    image: "/images/projects/React.js portfolio.PNG",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/abdulbariks/portfolio",
+    previewUrl: "https://abdul-barik-portfolio.vercel.app/",
   },
   {
     id: 3,
@@ -53,7 +53,7 @@ const projectsData = [
   {
     id: 6,
     title: "Chat Application",
-    description: "Project 5 description",
+    description: "A chat application makes it easy to communicate with people anywhere in the world by sending and receiving messages in real time",
     image: "/images/projects/chat-application.PNG",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/abdulbariks/chat-application",
