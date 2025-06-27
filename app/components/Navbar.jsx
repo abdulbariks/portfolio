@@ -1,39 +1,38 @@
-"use client"
-import Link from 'next/link';
-import React, {useState} from 'react';
-import NavLink from './NavLink';
-import MenuOverlay from './MenuOverlay';
+"use client";
+import Link from "next/link";
+import React, { useState } from "react";
+import NavLink from "./NavLink";
+import MenuOverlay from "./MenuOverlay";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 
 const navLinks = [
-    {
-        title: "Home",
-        path: "/",
-      },
-    {
-      title: "About",
-      path: "#about",
-    },
-    {
-      title: "Projects",
-      path: "#projects",
-    },
-    {
-      title: "Contact",
-      path: "#contact",
-    },
-  ];
+  {
+    title: "Home",
+    path: "/",
+  },
+  {
+    title: "About",
+    path: "#about",
+  },
+  {
+    title: "Projects",
+    path: "#projects",
+  },
+  {
+    title: "Contact",
+    path: "#contact",
+  },
+];
 
 const Navbar = () => {
-
-        const [navbarOpen, setNavbarOpen] = useState(false);
+  const [navbarOpen, setNavbarOpen] = useState(false);
 
   return (
     <nav className="fixed mx-auto border border-[#33353F] top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-100">
-      <div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-4 py-2">
+      <div className="flex flex-col md:flex-row container lg:py-4 flex-wrap items-center justify-between mx-auto px-4 py-2">
         <Link
           href={"/"}
-          className="text-1xl md:text-3xl text-white font-semibold"
+          className="text-1xl md:text-3xl pb-2 text-white font-semibold"
         >
           ABDUL BARIK
         </Link>
@@ -64,9 +63,17 @@ const Navbar = () => {
           </ul>
         </div>
       </div>
-      {navbarOpen ? <MenuOverlay links={navLinks} /> : null}
+      {navbarOpen ? (
+        <ul className="flex  gap-5 items-center justify-center md:p-0 md:space-x-8 mt-0">
+          {navLinks.map((link, index) => (
+            <li key={index}>
+              <NavLink href={link.path} title={link.title} />
+            </li>
+          ))}
+        </ul>
+      ) : null}
     </nav>
-    );
+  );
 };
 
 export default Navbar;

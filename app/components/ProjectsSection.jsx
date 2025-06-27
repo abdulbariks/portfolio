@@ -7,17 +7,19 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
   {
     id: 1,
-    title: "Portfolio Website",
-    description: "Responsive Personal Portfolio Website in HTML CSS and Bootstrap",
-    image: "/images/projects/portfolio.PNG",
+    title: "Law.BD",
+    description:
+      "FindLawyer is a simple and intuitive React-based web application that helps users search for lawyers by expertise, location, and availability. Whether you're looking for legal advice or trying to book a consultation, this app makes the process smooth and efficient.",
+    image: "/images/projects/lawbd.PNG",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/abdulbariks/abdulbariks.github.io",
-    previewUrl: "https://abdulbariks.github.io/",
+    previewUrl: "https://abdulbariks-lawbd.netlify.app/",
   },
   {
     id: 2,
     title: "Next.Js Portfolio Website",
-    description: "Next.js - a React framework used for building blazing-fast websites along with server-side rendering",
+    description:
+      "Next.js - a React framework used for building blazing-fast websites along with server-side rendering",
     image: "/images/projects/react-portfolio.PNG",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/abdulbariks/portfolio",
@@ -53,7 +55,8 @@ const projectsData = [
   {
     id: 6,
     title: "Chat Application",
-    description: "A chat application makes it easy to communicate with people anywhere in the world by sending and receiving messages in real time",
+    description:
+      "A chat application makes it easy to communicate with people anywhere in the world by sending and receiving messages in real time",
     image: "/images/projects/chat-application.PNG",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/abdulbariks/chat-application",
