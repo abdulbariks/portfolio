@@ -12,48 +12,21 @@ const projectsData = [
       "FindLawyer is a simple and intuitive React-based web application that helps users search for lawyers by expertise, location, and availability. Whether you're looking for legal advice or trying to book a consultation, this app makes the process smooth and efficient.",
     image: "/images/projects/lawbd.PNG",
     tag: ["All", "Web"],
-    gitUrl: "https://github.com/abdulbariks/abdulbariks.github.io",
+    gitUrl: "https://github.com/abdulbariks/Law.BD",
     previewUrl: "https://abdulbariks-lawbd.netlify.app/",
   },
   {
     id: 2,
-    title: "Next.Js Portfolio Website",
+    title: "Roommate Lagbe",
     description:
-      "Next.js - a React framework used for building blazing-fast websites along with server-side rendering",
-    image: "/images/projects/react-portfolio.PNG",
+      "A smart and safe platform to help you find compatible roommates with ease.",
+    image: "/images/projects/roommate.PNG",
     tag: ["All", "Web"],
-    gitUrl: "https://github.com/abdulbariks/portfolio",
-    previewUrl: "https://abdul-barik-portfolio.vercel.app/",
+    gitUrl: "https://github.com/abdulbariks/Roommate-Lagbe",
+    previewUrl: "https://abdulbarik-roommate-finder.netlify.app/",
   },
   {
     id: 3,
-    title: "E-commerce Application",
-    description: "Project 3 description",
-    image: "/images/projects/3.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
-  {
-    id: 4,
-    title: "Food Ordering Application",
-    description: "Project 4 description",
-    image: "/images/projects/4.png",
-    tag: ["All", "Mobile"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
-  {
-    id: 5,
-    title: "React Firebase Template",
-    description: "Authentication and CRUD operations",
-    image: "/images/projects/5.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
-  {
-    id: 6,
     title: "Chat Application",
     description:
       "A chat application makes it easy to communicate with people anywhere in the world by sending and receiving messages in real time",
@@ -61,6 +34,26 @@ const projectsData = [
     tag: ["All", "Web"],
     gitUrl: "https://github.com/abdulbariks/chat-application",
     previewUrl: "https://chat-application-3hxv.onrender.com",
+  },
+  {
+    id: 4,
+    title: "E-commerce Application",
+    description:
+      "Shopelo Trading is an ecommerce site developed using the MERN (MongoDB, Express.js, React, Node.js) stack. It offers a user-friendly and efficient shopping experience for customers, while providing sellers with essential tools to manage their products and sales.",
+    image: "/images/projects/3.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/abdulbariks/MERN-Ecommerce-Site",
+    previewUrl: "https://mern-ecommerce-site-chi.vercel.app/",
+  },
+  {
+    id: 5,
+    title: "Food Ordering Application (Coming Soon)",
+    description:
+      "I am working hard to launch my Food Ordering Application. Stay tuned for something amazing!",
+    image: "/images/projects/4.png",
+    tag: ["All", "Web", "Mobile"],
+    gitUrl: "/",
+    previewUrl: "/",
   },
 ];
 
@@ -83,8 +76,8 @@ const ProjectsSection = () => {
   };
 
   return (
-    <section id="projects">
-      <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
+    <section className="py-10" id="projects">
+      <h2 className="text-center text-4xl font-bold text-white mb-8 md:mb-12">
         My Projects
       </h2>
       <div className="text-white flex flex-row justify-center items-center gap-2 py-6">

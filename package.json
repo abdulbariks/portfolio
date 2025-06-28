@@ -12,13 +12,17 @@
     "@heroicons/react": "^2.1.1",
     "@tailwindcss/postcss": "^4.1.11",
     "daisyui": "^5.0.43",
+    "emailjs-com": "^3.2.0",
     "framer-motion": "^10.17.9",
     "next": "^14.2.30",
     "react": "^18",
     "react-animated-numbers": "^0.17.1",
     "react-dom": "^18",
+    "react-fast-marquee": "^1.6.5",
+    "react-icons": "^5.5.0",
     "react-type-animation": "^3.2.0",
-    "resend": "^3.2.0"
+    "resend": "^3.2.0",
+    "sweetalert2": "^11.22.1"
   },
   "devDependencies": {
     "autoprefixer": "^10.0.1",

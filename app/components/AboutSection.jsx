@@ -2,43 +2,47 @@
 import React, { useTransition, useState } from "react";
 import Image from "next/image";
 import TabButton from "./TabButton";
+import {
+  FaUniversity,
+  FaBook,
+  FaGraduationCap,
+  FaCode,
+  FaMobileAlt,
+  FaSearch,
+  FaLaptopCode,
+} from "react-icons/fa";
 
 const TAB_DATA = [
-  {
-    title: "Skills",
-    id: "skills",
-    content: (
-      <ul className="list-disc pl-2">
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>React</li>
-        <li>Next</li>
-        <li>NodeJS</li>
-        <li>Express</li>
-        <li>MongoDB</li>      
-      </ul>
-    ),
-  },
   {
     title: "Education",
     id: "education",
     content: (
-      <ul className="list-disc pl-2">
-        <li>Bachelor of Science (BSc):<br></br>
-              Institution : UCASM Under of National University<br></br>
-              Subject : Computer Science Engineering(CSE)<br></br>
-              CGPA : 2.68</li>
-        <li>Higher Secondary Certificate (HSC):<br></br>
-              Institution : Bhawal Badre Alam Govt College , Gazipur<br></br>
-              Group : Science<br></br>
-              GPA : 3.42<br></br>
-              Board : Dhaka</li>
-        <li>Secondary School Certificate (SSC):<br></br>
-              Institution : Tista K R Khadem High School, Tista, Lalmonirhat<br></br>
-              Group : Science<br></br>
-              GPA : 4.56<br></br>
-              Board : Dinajpur
+      <ul className="pl-4 space-y-2">
+        <li>
+          <strong className="flex items-center gap-2">
+            <FaGraduationCap className="text-blue-600" />
+            Bachelor of Science (BSc)
+          </strong>
+          <ul className="list-none pl-6 space-y-1 mt-1">
+            <li className="flex items-center gap-2">
+              <FaUniversity className="text-gray-600" />
+              <span>
+                <strong>Institution:</strong> UCASM, Under National University
+              </span>
+            </li>
+            <li className="flex items-center gap-2">
+              <FaBook className="text-gray-600" />
+              <span>
+                <strong>Subject:</strong> Computer Science & Engineering (CSE)
+              </span>
+            </li>
+            <li className="flex items-center gap-2">
+              <FaGraduationCap className="text-gray-600" />
+              <span>
+                <strong>CGPA:</strong> 2.68
+              </span>
+            </li>
+          </ul>
         </li>
       </ul>
     ),
@@ -47,18 +51,38 @@ const TAB_DATA = [
     title: "Certifications",
     id: "certifications",
     content: (
-      <ul className="list-disc pl-2">
-        <li>Full Stack Development-Bohubrihi</li>
-        <li>Mobile Application Development-BITM</li>
-        <li>Search Engine Optimization(SEO)-eShikhon</li>
-        <li>Web Development-CodersTrust Bangladesh</li>
+      <ul className="pl-4 space-y-2">
+        <li className="flex items-center gap-2">
+          <FaCode className="text-blue-600" />
+          <span>
+            <strong>Full Stack Development:</strong> Programming Hero
+          </span>
+        </li>
+        <li className="flex items-center gap-2">
+          <FaMobileAlt className="text-green-600" />
+          <span>
+            <strong>Mobile Application Development:</strong> BITM
+          </span>
+        </li>
+        <li className="flex items-center gap-2">
+          <FaSearch className="text-orange-600" />
+          <span>
+            <strong>Search Engine Optimization (SEO):</strong> eShikhon
+          </span>
+        </li>
+        <li className="flex items-center gap-2">
+          <FaLaptopCode className="text-purple-600" />
+          <span>
+            <strong>Web Development:</strong> CodersTrust
+          </span>
+        </li>
       </ul>
     ),
   },
 ];
 
 const AboutSection = () => {
-  const [tab, setTab] = useState("skills");
+  const [tab, setTab] = useState("education");
   const [isPending, startTransition] = useTransition();
 
   const handleTabChange = (id) => {
@@ -68,27 +92,26 @@ const AboutSection = () => {
   };
 
   return (
-    <section className="text-white" id="about">
+    <section className="text-white mt-16" id="about">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <Image src="/images/about-image.png" alt="about-image" height={500} width={500} />
+        <Image
+          src="/images/about-image.png"
+          alt="about-image"
+          height={500}
+          width={500}
+          className="rounded-md"
+        />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
             I am a full stack web developer with a passion for creating
             interactive and responsive web applications. I have experience
-            working with HTML, CSS, JavaScript, React, Next, Node.js, Express, MongoDB, 
-            and Git. I am a quick learner and I am always
-            looking to expand my knowledge and skill set. I am a team player and
-            I am excited to work with others to create amazing applications.
+            working with HTML, CSS, JavaScript, React, Next, Node.js, Express,
+            MongoDB, and Git. I am a quick learner and I am always looking to
+            expand my knowledge and skill set. I am a team player and I am
+            excited to work with others to create amazing applications.
           </p>
           <div className="flex flex-row justify-start mt-8">
-            <TabButton
-              selectTab={() => handleTabChange("skills")}
-              active={tab === "skills"}
-            >
-              {" "}
-              Skills{" "}
-            </TabButton>
             <TabButton
               selectTab={() => handleTabChange("education")}
               active={tab === "education"}
