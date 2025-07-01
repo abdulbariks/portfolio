@@ -27,6 +27,16 @@ const projectsData = [
   },
   {
     id: 3,
+    title: "SportNexus",
+    description:
+      "SportNexus is a modern event management web application designed specifically for organizing and tracking sports events. Users can browse upcoming competitions, register participants, and manage event logistics from a centralized dashboard. The platform supports secure authentication, role-based access (admin, organizers, players), and real-time updates. Organizers can create events with details like type, date, and location, while users can view and join them easily. SportNexus streamlines the entire sports event workflow, making coordination efficient and user-friendly.",
+    image: "/images/projects/SportNexus.PNG",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/abdulbariks/SportNexus",
+    previewUrl: "https://sportnexus.netlify.app/",
+  },
+  {
+    id: 4,
     title: "Chat Application",
     description:
       "A chat application makes it easy to communicate with people anywhere in the world by sending and receiving messages in real time",
@@ -36,7 +46,7 @@ const projectsData = [
     previewUrl: "https://chat-application-3hxv.onrender.com",
   },
   {
-    id: 4,
+    id: 5,
     title: "E-commerce Application",
     description:
       "Shopelo Trading is an ecommerce site developed using the MERN (MongoDB, Express.js, React, Node.js) stack. It offers a user-friendly and efficient shopping experience for customers, while providing sellers with essential tools to manage their products and sales.",
@@ -46,7 +56,7 @@ const projectsData = [
     previewUrl: "https://mern-ecommerce-site-chi.vercel.app/",
   },
   {
-    id: 5,
+    id: 6,
     title: "Food Ordering Application (Coming Soon)",
     description:
       "I am working hard to launch my Food Ordering Application. Stay tuned for something amazing!",
