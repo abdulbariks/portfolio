@@ -100,7 +100,7 @@ const AboutSection = () => {
         <Image
           src="/images/about-image.png"
           alt="about-image"
-          height={500}
+          height={500}n
           width={500}
           className="rounded-md"
         />
