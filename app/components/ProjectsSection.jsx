@@ -7,26 +7,16 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
   {
     id: 1,
-    title: "Law.BD",
+    title: "NexuStudy",
     description:
-      "FindLawyer is a simple and intuitive React-based web application that helps users search for lawyers by expertise, location, and availability. Whether you're looking for legal advice or trying to book a consultation, this app makes the process smooth and efficient.",
-    image: "/images/projects/lawbd.PNG",
+      "NexuStudy is a full-featured collaborative study platform that connects students, tutors, and administrators to streamline session scheduling, resource sharing, and user management. It’s designed to enhance educational collaboration, accessibility to study materials, and efficient session management.",
+    image: "/images/projects/NexuStudy.PNG",
     tag: ["All", "Web"],
-    gitUrl: "https://github.com/abdulbariks/Law.BD",
-    previewUrl: "https://abdulbariks-lawbd.netlify.app/",
+    gitUrl: "https://github.com/abdulbariks/NexuStudy",
+    previewUrl: "https://abdulbarik-nexustudy.netlify.app/",
   },
   {
     id: 2,
-    title: "Roommate Lagbe",
-    description:
-      "A smart and safe platform to help you find compatible roommates with ease.",
-    image: "/images/projects/roommate.PNG",
-    tag: ["All", "Web"],
-    gitUrl: "https://github.com/abdulbariks/Roommate-Lagbe",
-    previewUrl: "https://abdulbarik-roommate-finder.netlify.app/",
-  },
-  {
-    id: 3,
     title: "SportNexus",
     description:
       "SportNexus is a modern event management web application designed specifically for organizing and tracking sports events. Users can browse upcoming competitions, register participants, and manage event logistics from a centralized dashboard. The platform supports secure authentication, role-based access (admin, organizers, players), and real-time updates. Organizers can create events with details like type, date, and location, while users can view and join them easily. SportNexus streamlines the entire sports event workflow, making coordination efficient and user-friendly.",
@@ -36,7 +26,28 @@ const projectsData = [
     previewUrl: "https://sportnexus.netlify.app/",
   },
   {
+    id: 3,
+    title: "Law.BD",
+    description:
+      "FindLawyer is a simple and intuitive React-based web application that helps users search for lawyers by expertise, location, and availability. Whether you're looking for legal advice or trying to book a consultation, this app makes the process smooth and efficient.",
+    image: "/images/projects/lawbd.PNG",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/abdulbariks/Law.BD",
+    previewUrl: "https://abdulbariks-lawbd.netlify.app/",
+  },
+  {
     id: 4,
+    title: "Roommate Lagbe",
+    description:
+      "A smart and safe platform to help you find compatible roommates with ease.",
+    image: "/images/projects/roommate.PNG",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/abdulbariks/Roommate-Lagbe",
+    previewUrl: "https://abdulbarik-roommate-finder.netlify.app/",
+  },
+
+  {
+    id: 5,
     title: "Chat Application",
     description:
       "A chat application makes it easy to communicate with people anywhere in the world by sending and receiving messages in real time",
@@ -46,7 +57,7 @@ const projectsData = [
     previewUrl: "https://chat-application-3hxv.onrender.com",
   },
   {
-    id: 5,
+    id: 6,
     title: "E-commerce Application",
     description:
       "Shopelo Trading is an ecommerce site developed using the MERN (MongoDB, Express.js, React, Node.js) stack. It offers a user-friendly and efficient shopping experience for customers, while providing sellers with essential tools to manage their products and sales.",
@@ -56,7 +67,7 @@ const projectsData = [
     previewUrl: "https://mern-ecommerce-site-chi.vercel.app/",
   },
   {
-    id: 6,
+    id: 7,
     title: "Food Ordering Application (Coming Soon)",
     description:
       "I am working hard to launch my Food Ordering Application. Stay tuned for something amazing!",
